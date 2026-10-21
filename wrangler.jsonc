@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "havens-commons-mcp",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-09-21",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "commons.travishavens.com", "custom_domain": true }
+  ],
+  "vars": { "OPERATIONS_BUDGET": 900 },
+  "ratelimits": [
+    {
+      "name": "COMMONS_RATE_LIMITER",
+      "namespace_id": "694001",
+      "simple": { "limit": 600, "period": 60 }
+    }
+  ],
+  "observability": { "enabled": false }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "havens-commons-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --ip 127.0.0.1 --port 8794",
+    "test": "node --test test/*.test.mjs",
+    "timing": "node scripts/search-timing.mjs",
+    "deploy:dry": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "entities": "4.5.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.3"
+  }
+}
