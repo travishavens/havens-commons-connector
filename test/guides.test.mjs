@@ -2,8 +2,8 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { START_ID, docExportUrl, getGuide, htmlToText, listGuides, operationsBudgetLimit, parseGuideIndex, rankGuides, searchGuides } from '../src/guides.mjs';
 
-const a = '1wyTUNVHifUGc07Q_duTZJaAq4uZaVoug1WaJ67dBjLE';
-const b = '1JmG_jOCPwfo4_NwdCUjY4YplCdNm1uu9DQvK0wAurJ0';
+const a = 'fixture_claude_start_on_phone_01';
+const b = 'fixture_family_voice_scam_plan_02';
 const link = (id, tail) => `https://www.google.com/url?q=${encodeURIComponent(`https://docs.google.com/document/d/${id}/${tail}`)}&sa=D`;
 const index = `<h3>01 Pick your main AI</h3><ul>
   <li><a href="${link(a, 'edit')}">Start on your phone</a> | <a href="${link(a, 'export?format=txt')}">for your AI</a></li>
