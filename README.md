@@ -2,7 +2,7 @@
 
 This read-only [MCP](https://modelcontextprotocol.io/) server lets an AI app list, search, and read the public [Havens Commons guides](https://sites.google.com/view/havens-commons). It runs as a Cloudflare Worker at `https://commons.travishavens.com/mcp`. The tools are `list_guides`, `search_guides`, and `get_guide`.
 
-The public [Start here guide](https://docs.google.com/document/d/1DCs802oe4EegUbVrst5DRX7nXBHm3-hz0QroePziaCE/edit) is the catalog. The Worker reads its public HTML export and follows the public Google Docs links listed there. It keeps the index and guide text in Cloudflare's cache for about one hour. New guides become searchable after the index cache expires.
+The public [Start here guide](https://docs.google.com/document/d/1ryzBYccVRNMHbjslclMareXbgxqnRlxumoYIG7as9f4/edit) is the catalog. The Worker reads its public HTML export and follows the public Google Docs links listed there. It keeps the index and guide text in Cloudflare's cache for about one hour. New guides become searchable after the index cache expires.
 
 ## Add it to your AI app
 

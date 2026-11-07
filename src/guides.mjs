@@ -1,15 +1,15 @@
 import { decodeHTML } from 'entities';
 
-export const START_ID = '1DCs802oe4EegUbVrst5DRX7nXBHm3-hz0QroePziaCE';
+export const START_ID = '1ryzBYccVRNMHbjslclMareXbgxqnRlxumoYIG7as9f4';
 const ID_PATTERN = /^[A-Za-z0-9_-]{20,100}$/;
 const CACHE_SECONDS = 3600;
 const SLICE_SIZE = 20;
 const DEFAULT_OPERATIONS_BUDGET = 46;
 const MAX_OPERATIONS_BUDGET = 900;
 const CACHE_ROOT = 'https://commons.travishavens.com/_cache';
-const INDEX_URL = `${CACHE_ROOT}/index/v1`;
-const guideUrl = (id) => `${CACHE_ROOT}/guide/v1/${id}`;
-const sliceUrl = (number) => `${CACHE_ROOT}/corpus/v1/${number}`;
+const INDEX_URL = `${CACHE_ROOT}/index/v2`;
+const guideUrl = (id) => `${CACHE_ROOT}/guide/v2/${id}`;
+const sliceUrl = (number) => `${CACHE_ROOT}/corpus/v2/${number}`;
 
 export function operationsBudgetLimit(value) {
   const parsed = typeof value === 'number' ? value
